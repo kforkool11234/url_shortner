@@ -9,7 +9,7 @@ function Login() {
 
   async function send(e) {
     e.preventDefault();
-    const url = 'http://localhost:5000/login';
+    const url = 'https://url-shortner-opxv.onrender.com/login';
     try {
       const response = await axios.post(url, { email, password });
       const { token, user } = response.data;

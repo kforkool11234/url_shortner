@@ -22,7 +22,7 @@ function Input() {
   };
 
   const handleSubmit = async () => {
-    const url = 'http://localhost:5000/shorturl';
+    const url = 'https://url-shortner-opxv.onrender.com/shorturl';
     const token = localStorage.getItem('token');
     try {
       const response = await axios.post(

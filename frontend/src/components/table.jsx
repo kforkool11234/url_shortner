@@ -22,7 +22,7 @@ function Table() {
       const token = localStorage.getItem('token');
       try {
         const response = await axios.get(
-          "http://localhost:5000/",
+          "https://url-shortner-opxv.onrender.com/",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ function Table() {
 
   async function scam(e) {
     const token = localStorage.getItem('token');
-    const response = await axios.get(`http://localhost:5000/scam/${e.target.value}`, {
+    const response = await axios.get(`https://url-shortner-opxv.onrender.com/scam/${e.target.value}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -54,7 +54,7 @@ function Table() {
 
   async function del(e) {
     const token = localStorage.getItem('token');
-    await axios.get(`http://localhost:5000/del/${e.target.value}`, {
+    await axios.get(`https://url-shortner-opxv.onrender.com/del/${e.target.value}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -80,7 +80,7 @@ function Table() {
                 </a>
               </td>
               <td>
-                <a target="_blank" rel="noopener noreferrer" href={`http://localhost:5000/${item.short}`} style={{ color: item.scam > 10 ? "red" : null }}>
+                <a target="_blank" rel="noopener noreferrer" href={`https://url-shortner-opxv.onrender.com/${item.short}`} style={{ color: item.scam > 10 ? "red" : null }}>
                   {item.short}
                 </a>
               </td>
@@ -111,7 +111,7 @@ function Table() {
                     </a>
                   </td>
                   <td>
-                    <a target="_blank" rel="noopener noreferrer" href={`http://localhost:5000/${item.short}`}>
+                    <a target="_blank" rel="noopener noreferrer" href={`https://url-shortner-opxv.onrender.com/${item.short}`}>
                       {item.short}
                     </a>
                   </td>

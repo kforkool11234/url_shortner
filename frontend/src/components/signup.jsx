@@ -7,7 +7,7 @@ function Signup(){
     const navigate = useNavigate();
     async function send(e){
       e.preventDefault();
-      const url = 'http://localhost:5000/signup';
+      const url = 'https://url-shortner-opxv.onrender.com/signup';
       try {
         const response = await axios.post(url, { email, password });
         console.log("Data posted", response.data);

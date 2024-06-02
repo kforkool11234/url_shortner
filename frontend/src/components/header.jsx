@@ -19,7 +19,7 @@ function Header() {
 
   const logout = async () => {
     try {
-      await axios.post("http://localhost:5000/logout");
+      await axios.post("https://url-shortner-opxv.onrender.com/logout");
       localStorage.removeItem('token');
       localStorage.removeItem('user');
       setIsLoggedIn(false);
