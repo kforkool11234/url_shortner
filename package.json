@@ -2,7 +2,7 @@
   "name": "url_shortner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "concurrently \"cd frontend && npm start\" \"cd backend && nodemon\"",
     "postinstall": "cd frontend && npm install && cd ../backend && npm install"
