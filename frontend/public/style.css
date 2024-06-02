@@ -1,0 +1,43 @@
+table {
+  border-collapse: collapse; /* Remove default spacing between cells */
+  width: 100%; /* Make the table occupy full width */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+th, td {
+  padding: 10px; /* Add padding for cell content */
+  border: 1px solid #ddd; /* Add thin border around cells */
+  text-align: left; /* Align text left by default */
+}
+
+th {
+  background-color: #f2f2f2; /* Light background color for headers */
+  font-weight: bold; /* Make header text bold */
+}
+
+tr:nth-child(even) { /* Style even rows (optional) */
+  background-color: #fafafa; /* Light gray background for even rows */
+}
+button {
+  background-color: #4CAF50; /* Green color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: darken(#4CAF50, 10%); /* Darken on hover */
+}
+button:disabled {
+  background-color: #4cdb42; /* Light gray background for disabled buttons */
+  color: #ccc; /* Gray text color for disabled buttons */
+  cursor: default; /* Remove pointer cursor on hover */
+  opacity: 0.6; /* Reduce opacity for disabled look */
+}
