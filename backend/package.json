@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "devStart": "nodemon app.js",
-    "postinstall": "npm install"
+    "postinstall": "npm i nodemon"
   },
   "author": "",
   "license": "ISC",
