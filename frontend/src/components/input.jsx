@@ -9,7 +9,7 @@ function Input() {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    console.log("Token in useEffect:", token); // Debugging log
+
     if (token) {
       setIsLoggedIn(true);
     } else {
@@ -45,8 +45,6 @@ function Input() {
     else{setCheck(true)}
     console.log(check)
   };
-
-  console.log("Is Logged In (input):", isLoggedIn); // Debugging log
 
   return (
     <div>
