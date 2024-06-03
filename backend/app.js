@@ -41,7 +41,7 @@ app.post("/shorturl", async (req, res) => {
     const user = auth.currentUser;
     const status = await axios.head(value);
 
-    if (status.status === 200) {
+    if (status.status === 200||204) {
       if (user && check) {
         await surl2.create({ name: user.displayName || user.email, full: value });
         res.status(200).json({ message: "Data received and stored with user info", value });

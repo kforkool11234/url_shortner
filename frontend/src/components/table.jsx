@@ -37,7 +37,7 @@ function Table() {
     };
 
     fetchData();
-  }, [data1,data2]);
+  }, []);
 
   async function scam(e) {
     const token = localStorage.getItem('token');
