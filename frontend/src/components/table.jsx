@@ -10,8 +10,7 @@ function Table() {
   useEffect(() => {
     const token = localStorage.getItem('token');
     const user = JSON.parse(localStorage.getItem('user'));
-    console.log("Token in Header useEffect:", token); // Debugging log
-    console.log("User in Header useEffect:", user); // Debugging log
+    
     if (token && user) {
       setIsLoggedIn(true);
     }
